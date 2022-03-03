@@ -59,4 +59,5 @@ e.g., by default the command should be:
 python run_adaptive_learning.py --do_eval --do_simple_test --do_complex_test --do_small_test --load_dir outputs_adaptive_learning/saved_model
 ```
 # Loading checkpoints
-We have released our well-trained models [here](https://drive.google.com/drive/folders/1vYDF3-c6XatPZkpBVrpX30GfvAfovWOg?usp=sharing). The moe.zip contains the MoE model before the self-adaptive learning, and the samoe.zip contains SaMoE that achieves the best performance in our paper. 
+We have released our well-trained models [here](https://drive.google.com/drive/folders/1vYDF3-c6XatPZkpBVrpX30GfvAfovWOg?usp=sharing). The moe.zip contains the MoE model before the self-adaptive learning, and the samoe.zip contains SaMoE that achieves the best performance in our paper. You can evaluate these models with the commands provided above.
+
