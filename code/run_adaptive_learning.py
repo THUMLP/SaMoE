@@ -21,7 +21,7 @@ from pytorch_pretrained_bert.file_utils import WEIGHTS_NAME
 from transformers import RobertaTokenizer, RobertaConfig
 from pytorch_pretrained_bert.optimization import BertAdam
 from tensorboardX import SummaryWriter
-from interactive_model import RobertaMoEForSequenceClassification_adaptive
+from model import RobertaMoEForSequenceClassification_adaptive
 import logging
 
 logger = logging.getLogger(__name__)
