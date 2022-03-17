@@ -2,7 +2,7 @@
 Code for ACL2022 findings paper "Table-based Fact Verification with Self-adaptive Mixture of Experts"
 # Introduction
 **S**elf-**a**daptive **M**ixture-**o**f-**E**xperts **N**etwork (**SaMoE**) is a framework that aims at dealing with statement verification based on tables, which requires complicated numerical/logical/textual reasoning skills. The network is composed of multiple experts, each handling a specific part of the semantics for reasoning, whereas a management module is applied to decide the contribution of each expert network to the verification result. A self-adaptive method is developed to teach the management module combining results of different experts more efficiently without external knowledge. SaMoE achieves **85.1%** accuracy on the benchmark dataset TabFact, comparable with the previous state-of-the-art models. 
-![SaMoE's architechture](https://github.com/Zhouyx17/SaMoE/blob/main/overview.png?raw=true)
+![SaMoE's architechture](https://github.com/THUMLP/SaMoE/blob/master/overview.png?raw=true)
 ***
 # Requirement
 - nltk==3.5
@@ -28,7 +28,7 @@ python preprocess_data.py
 python preprocess_BERT_revised.py
 ```
 You may find in the root a new folder "processed_datasets_revised", which contains all the processed data.
-# Supervised Learning
+# Multi-expert Training
 To train the MoE:
 ```
 python run_moe.py --do_train --do_eval
